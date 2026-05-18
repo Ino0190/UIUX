@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ペルソナテンプレート（横位置・PPTX対応）</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
+    background: #e8eaef;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .instructions {
+    max-width: 1280px;
+    background: #fffbeb;
+    border-left: 4px solid #e65100;
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #664400;
+    border-radius: 0 6px 6px 0;
+  }
+  /* スライドサイズ: 16:9 */
+  .slide {
+    width: 1280px;
+    height: 720px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  }
+  /* ヘッダー */
+  .header {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 56px;
+    background: #2c3e6b;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+  }
+  .header h1 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .header .persona-name {
+    margin-left: auto;
+    font-size: 20px;
+    color: #e8b84b;
+    font-weight: 700;
+  }
+  /* 左カラム: 写真＋基本情報 */
+  .left-col {
+    position: absolute;
+    top: 56px; left: 0;
+    width: 320px;
+    height: 664px;
+    background: #f7fafc;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e2e8f0;
+    margin-bottom: 16px;
+  }
+  .basic-info {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .basic-info th {
+    text-align: left;
+    padding: 5px 8px;
+    color: #2c3e6b;
+    font-weight: 700;
+    width: 70px;
+    vertical-align: top;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .basic-info td {
+    padding: 5px 8px;
+    color: #333;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+  }
+  .quote-section {
+    margin-top: 16px;
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border-left: 3px solid #c9933a;
+    font-size: 12px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.7;
+  }
+  /* 右カラム: 詳細情報 */
+  .right-col {
+    position: absolute;
+    top: 56px; left: 320px; right: 0;
+    height: 664px;
+    padding: 20px 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 12px;
+  }
+  .info-block {
+    background: #f7fafc;
+    border-radius: 4px;
+    padding: 12px 14px;
+  }
+  .info-block h3 {
+    font-size: 13px;
+    color: #2c3e6b;
+    font-weight: 700;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e65100;
+  }
+  .info-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .info-block li {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #333;
+    padding-left: 12px;
+    position: relative;
+  }
+  .info-block li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #e65100;
+  }
+  .info-block p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #333;
+  }
+  .info-block.full-width {
+    grid-column: 1 / -1;
+  }
+  /* フッター */
+  .footer {
+    position: absolute;
+    bottom: 8px; right: 16px;
+    font-size: 11px;
+    color: #a0aec0;
+  }
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  <strong>使い方:</strong>
+  ① <code>images/persona-photo.jpg</code> に写真を保存 →
+  ② テキストを編集（ブラウザ上で直接編集可能） →
+  ③ スライド全体を選択してPowerPoint / Excel / Google Slidesにコピペ。
+  テーブル構造なのでセルごとに貼り付けられます。
+</div>
+
+<!-- ===== ペルソナ スライド ===== -->
+<div class="slide">
+
+  <!-- ヘッダー -->
+  <div class="header">
+    <h1>ペルソナ</h1>
+    <div class="persona-name" contenteditable="true">田中 美咲（32歳）</div>
+  </div>
+
+  <!-- 左カラム -->
+  <div class="left-col">
+    <img class="photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23e2e8f0'/%3E%3Ccircle cx='100' cy='72' r='36' fill='%23a0aec0'/%3E%3Cellipse cx='100' cy='170' rx='52' ry='44' fill='%23a0aec0'/%3E%3Ctext x='100' y='195' text-anchor='middle' font-size='11' fill='%23718096' font-family='sans-serif'%3E写真を差し替え%3C/text%3E%3C/svg%3E" alt="ペルソナ写真">
+    <table class="basic-info">
+      <tr><th>年齢</th><td contenteditable="true">32歳</td></tr>
+      <tr><th>性別</th><td contenteditable="true">女性</td></tr>
+      <tr><th>職業</th><td contenteditable="true">IT企業 PM</td></tr>
+      <tr><th>家族</th><td contenteditable="true">夫と2人暮らし</td></tr>
+      <tr><th>居住地</th><td contenteditable="true">東京都世田谷区</td></tr>
+      <tr><th>趣味</th><td contenteditable="true">ヨガ、カフェ巡り</td></tr>
+      <tr><th>情報源</th><td contenteditable="true">Instagram、Podcast</td></tr>
+      <tr><th>デバイス</th><td contenteditable="true">iPhone 15 Pro</td></tr>
+    </table>
+    <div class="quote-section" contenteditable="true">
+      「朝、何を着るか考える時間が一番ストレス。前の日に決めておきたいけど、天気で変わるし…」
+    </div>
+  </div>
+
+  <!-- 右カラム -->
+  <div class="right-col">
+    <div class="info-block">
+      <h3>ゴール（達成したいこと）</h3>
+      <ul contenteditable="true">
+        <li>限られた時間で効率よく買い物を済ませたい</li>
+        <li>自分に似合う服を迷わず選びたい</li>
+        <li>手持ちの服を最大限活用したい</li>
+      </ul>
+    </div>
+    <div class="info-block">
+      <h3>ペイン（困っていること）</h3>
+      <ul contenteditable="true">
+        <li>手持ちの服との組み合わせがわからない</li>
+        <li>試着する時間がない</li>
+        <li>似たような服を買ってしまう</li>
+      </ul>
+    </div>
+    <div class="info-block">
+      <h3>行動パターン</h3>
+      <ul contenteditable="true">
+        <li>Instagramで見つける→店舗で試着→即購入</li>
+        <li>ECは返品が面倒で避ける</li>
+        <li>素材の質感 > ブランド名 > 価格で判断</li>
+      </ul>
+    </div>
+    <div class="info-block">
+      <h3>ゲイン（嬉しいこと）</h3>
+      <ul contenteditable="true">
+        <li>「それどこの？」と聞かれる</li>
+        <li>朝の支度が5分で終わる</li>
+        <li>3年使えるものを選べた実感</li>
+      </ul>
+    </div>
+    <div class="info-block full-width">
+      <h3>利用シナリオ</h3>
+      <p contenteditable="true">平日夜21時、ソファでスマホを見ているとき。明日の会議で何を着るか決まらない。アプリを開いて手持ちの服から組み合わせを提案してもらう。3分で明日のコーデが決まり、安心して寝られる。</p>
+    </div>
+  </div>
+
+  <div class="footer">Persona Template — 16:9 PPTX対応</div>
+</div>
+
+</body>
+</html>
