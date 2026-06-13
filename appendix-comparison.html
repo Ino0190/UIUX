@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>補論：世界との照合 — ユーザーは本当の理由を言えない</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", Georgia, serif; background: #ffffff; color: #1a1a2e; line-height: 1.8; }
+  .container { max-width: 860px; margin: 0 auto; padding: 48px 32px; }
+  h1 { font-size: 26px; color: #1e2a40; border-left: 5px solid #c9933a; padding-left: 14px; margin: 24px 0 24px; }
+  h2 { font-size: 22px; color: #4a3600; border-bottom: 2px solid #c9933a; padding-bottom: 6px; margin: 48px 0 16px; }
+  p { margin: 0 0 16px; font-size: 16px; }
+  ul, ol { margin: 0 0 16px 24px; font-size: 16px; }
+  li { margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; }
+  th, td { border: 1px solid #d8d0c0; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f3eee2; }
+  .note { background: #fbf8f1; border-left: 4px solid #c9933a; padding: 14px 16px; margin: 16px 0 24px; font-size: 15px; }
+  .refnum { font-size: 11px; }
+  .refnum a { color: #8a6d1f; text-decoration: none; }
+  .backlink { display: inline-block; margin: 0 0 24px; font-size: 14px; color: #1e2a40; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="backlink" href="index.html#appendix-theory-supplement">← 本編「世界との照合：本メソッドが立つ位置」に戻る</a>
+  <h1>補論：世界との照合 — 比較マトリクスと詳細</h1>
+  <p>本編の付録「学術理論との対応」で要約した照合結果の、元データと詳細です。海外8プログラムとの対応マトリクス、Contextual Designとの対応、Kumarの7モードとの構造比較、主要書籍との対応表を収録しています。</p>
+
+<h2 id="appendix-theory-supplement">世界との照合：本メソッドが立つ位置</h2>
+
+  <p>この補論は、本メソッドを海外のUXリサーチ実務プログラム、学術的フレームワーク、主要書籍と照合した結果をまとめたものです。目的は「世界の中でこのメソッドはどこに立っているのか」を明らかにすることです。</p>
+  <p>結論から書くと、本メソッドの<strong>ステージ1〜4とステージ8は、世界の標準的な実務プログラムと良好に対応します</strong>。一方で<strong>ステージ5〜7（暗黙知発掘・真のペイン候補・再解釈）を独立したフェーズとして明示的に切り分けて教えているプログラムは、調べた範囲ではあまり見当たりませんでした</strong>。これらの作業を「インサイト抽出」や「分析」の中で扱うプログラムは多いのですが、独立した工程として名前を与えている例が少ない、ということです。この観察を、ここで整理しておきます。</p>
+
+  <h2>対応した海外プログラム8つ</h2>
+  <p>以下の海外主要プログラムのリサーチフェーズと、本メソッドの8段階を1対1で照合しました。</p>
+  <p>UXに取り組むようになって、IDEOやd.schoolの手法は結構調べました。東大i.schoolなんかもそうですね。実際に参加してみたり、会社に講師を呼んでワークショップをしてもらったり。そこで使えそうなもの、違和感があるもの、その違和感をどう克服するかを考えました。以下はその過程で照合した結果です。</p>
+  <ul>
+    <li><strong>Google UX Design Certificate</strong>（Coursera、共感→定義→発想→プロトタイプ→テスト）<sup class="refnum"><a href="index.html#ref1">[1]</a></sup></li>
+    <li><strong>IDEO HCD</strong>（インスピレーション→アイディエーション→実装）<sup class="refnum"><a href="index.html#ref5">[5]</a></sup></li>
+    <li><strong>Stanford d.school</strong>（共感→定義→発想→プロトタイプ→テストの5モード）<sup class="refnum"><a href="index.html#ref2">[2]</a></sup></li>
+    <li><strong>Nielsen Norman Group（NNg）</strong>（発見→探索→テスト→傾聴の4フェーズ）<sup class="refnum"><a href="index.html#ref3">[3]</a></sup></li>
+    <li><strong>CMU MHCI のUCRE科目</strong>（評価手法→Contextual Design＝文脈的調査→解釈→アフィニティ図→デザイン）<sup class="refnum"><a href="index.html#ref4">[4]</a></sup></li>
+    <li><strong>UK Design Council の Double Diamond</strong>（発見→定義→展開→提供）<sup class="refnum"><a href="index.html#ref26">[26]</a></sup></li>
+    <li><strong>IBM Enterprise Design Thinking</strong>（観察→省察→制作の連続ループ）<sup class="refnum"><a href="index.html#ref21">[21]</a></sup></li>
+    <li><strong>General Assembly UX Immersive</strong>（リサーチ→アイディエーション→プロトタイピング→テストの10週間カリキュラム）<sup class="refnum"><a href="index.html#ref23">[23]</a></sup></li>
+  </ul>
+
+  <h2>対応度の全体像</h2>
+  <p>8段階メソッドの各段階が、これらの海外プログラムでどの程度明示的に扱われているかを4段階（◎明示的／○部分的／△暗黙的・限定的／×対応なし）で評価しました。</p>
+  <div class="note">以下の比較マトリクスはStep 1〜8を対象としています。Step 0（企画把握）はリサーチ手法そのものではなく、リサーチに入る前の前提確認フェーズのため、海外プログラムとの比較対象からは外しています。</div>
+
+  <table>
+    <thead>
+      <tr><th>ステージ</th><th>Google UX</th><th>IDEO</th><th>d.school</th><th>NNg</th><th>CMU</th><th>Double D.</th><th>IBM</th><th>GA</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>①仮説構築</td><td>△</td><td>○</td><td>△</td><td>○</td><td>○</td><td>△</td><td>○</td><td>△</td></tr>
+      <tr><td>②全体把握</td><td>◎</td><td>◎</td><td>◎</td><td>◎</td><td>◎</td><td>◎</td><td>○</td><td>◎</td></tr>
+      <tr><td>③ペイン特定</td><td>◎</td><td>○</td><td>◎</td><td>○</td><td>○</td><td>◎</td><td>○</td><td>○</td></tr>
+      <tr><td>④深掘り</td><td>△</td><td>○</td><td>○</td><td>○</td><td>◎</td><td>○</td><td>○</td><td>△</td></tr>
+      <tr><td><strong>⑤暗黙知発掘</strong></td><td><strong>×</strong></td><td><strong>△</strong></td><td><strong>△</strong></td><td><strong>×</strong></td><td><strong>△</strong></td><td><strong>×</strong></td><td><strong>△</strong></td><td><strong>×</strong></td></tr>
+      <tr><td><strong>⑥真のペイン候補</strong></td><td><strong>×</strong></td><td><strong>×</strong></td><td><strong>×</strong></td><td><strong>×</strong></td><td><strong>△</strong></td><td><strong>×</strong></td><td><strong>×</strong></td><td><strong>×</strong></td></tr>
+      <tr><td><strong>⑦再解釈</strong></td><td><strong>×</strong></td><td><strong>○</strong></td><td><strong>△</strong></td><td><strong>△</strong></td><td><strong>○</strong></td><td><strong>△</strong></td><td><strong>△</strong></td><td><strong>×</strong></td></tr>
+      <tr><td>⑧仮説検証</td><td>◎</td><td>○</td><td>◎</td><td>◎</td><td>◎</td><td>○</td><td>○</td><td>○</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">見ての通り、ステージ1〜4と⑧はほぼ全プログラムで明示的に扱われています。しかしステージ5〜7の行には「×」が圧倒的に多く、⑥真のペイン候補にいたっては8プログラム中7つが「×」です。これが本メソッドが、特に新規事業の探索で必要とされる真のペイン候補探索のために重視している部分です。正しい聞き方やプロセスだけではなく、相手の世界に入り込むようなことが必要なのかもしれません。</div>
+
+  <h2>なぜステージ5〜7が教育プログラムで明示されていないのか</h2>
+  <p>海外プログラムのほとんどは教育的・概念的フレームワークとして設計されています。初学者に対して「まず大きな流れを覚えてもらう」ことが優先されるため、リサーチの中間プロセスは大きなフェーズの中に飲み込まれてしまっています。</p>
+  <p>たとえば IDEOのインスピレーション段階は、全体把握・深掘り・暗黙知発掘・真のペイン候補・再解釈までを一つのフェーズに含んでいます。Stanford d.schoolの共感段階も同様です。これらは「没入する」という動詞で全部を包んでしまっています。</p>
+  <p>本メソッドは実務経験から帰納的に構築されたため、<strong>この中間プロセスで実際に何が起きているか</strong>を解像度高く分解することができました。暗黙知が掘り起こされる瞬間、そこから真のペイン候補が浮かび上がる瞬間、再解釈によって価値の言葉に翻訳される瞬間。これらは別々の認知プロセスであり、別々のスキルが要求されます。それを一つのフェーズに押し込むと、実務者は「何をしていいかわからない中間時間」に迷います。</p>
+  <div class="note">なぜ世界のプログラムでここが空いていたのか。おそらく、必ず何かが見つかるわけではないからだと思います。ステージ1〜4は「やれば結果が出る」ステップです。でもステージ5〜7は「やっても何も出ないことがある」。教育プログラムは「このステップを踏めば成果が出る」と約束する必要があるので、再現性が保証できないプロセスはカリキュラムに入れにくい。体系化しにくかったのだと思います。</div>
+
+  <h2>最も近い対応：CMUのContextual Design</h2>
+  <p>調査した中で最も近いのかもと思ったのは、CMU MHCIで教えられている <strong>Contextual Design（Beyer & Holtzblatt）</strong>です<sup class="refnum"><a href="index.html#ref4">[4]</a><a href="index.html#ref6">[6]</a></sup>。このメソッドは、文脈的調査→解釈セッション→アフィニティ・ダイアグラミング→ビジョニング→ストーリーボーディング→ユーザー環境設計→プロトタイピングという7段階で構成されます。</p>
+  <p>特に<strong>アフィニティ・ダイアグラミング</strong>は、チームが長時間データに没入することで「思考のパラダイムシフト」を起こし、パターンを浮かび上がらせるプロセスです。これは本メソッドの⑥真のペイン候補と⑦再解釈に近い活動を含んでいます。</p>
+  <p>ただしContextual Designでもこれらは「統合的プロセスの一部」として扱われており、独立したフェーズとしては明示されていません。ここに本メソッドとの差があります。</p>
+
+  <h2>学術的フレームワークによる裏付け</h2>
+  <p>興味深いことに、<strong>海外の実務プログラムより、学術的フレームワークの方が本メソッドの深層段階（ステージ5〜7）と近い内容のものがありました</strong>。以下がその例です。</p>
+  <ul>
+    <li><strong>Contextual Design（Beyer & Holtzblatt）</strong>の文脈的調査 → ステージ5暗黙知発掘の理論的基盤<sup class="refnum"><a href="index.html#ref6">[6]</a><a href="index.html#ref7">[7]</a></sup></li>
+    <li><strong>Grounded Theoryの定常比較法＋アブダクティブ推論</strong> → ステージ7再解釈の認知メカニズム<sup class="refnum"><a href="index.html#ref8">[8]</a></sup></li>
+    <li><strong>Sanders & Stappers の Generative Design Research</strong> → ステージ5暗黙知発掘の参加型手法（コラージュ・マップ・モデル）<sup class="refnum"><a href="index.html#ref9">[9]</a><a href="index.html#ref10">[10]</a></sup></li>
+    <li><strong>Indi Young の Mental Models と Practical Empathy</strong> → ステージ5〜7全体の方法論（ユーザーの深層的推論パターンの可視化）<sup class="refnum"><a href="index.html#ref31">[31]</a><a href="index.html#ref35">[35]</a></sup></li>
+    <li><strong>Jon Kolko のアブダクティブ・センスメイキング</strong> → ステージ7再解釈を独立フェーズとして構造化することの理論的妥当性<sup class="refnum"><a href="index.html#ref13">[13]</a><a href="index.html#ref14">[14]</a></sup></li>
+    <li><strong>Vijay Kumar の7モードフレームワーク</strong>（『101 Design Methods』） → 8段階メソッドと最も粒度の近い構造的類似性<sup class="refnum"><a href="index.html#ref11">[11]</a><a href="index.html#ref12">[12]</a></sup></li>
+    <li><strong>Erika Hall『Just Enough Research』</strong> → ステージ1仮説構築とステージ8仮説検証の明示的方法論<sup class="refnum"><a href="index.html#ref30">[30]</a></sup></li>
+  </ul>
+  <p>つまり、本メソッドが独立フェーズとして明示化したステージ5〜7は、<strong>学術的には既に理論化されていたが、実務プログラムには翻訳されていなかった</strong>領域だった、ということです。本メソッドは、この学術と実務の間のギャップを実務経験によって埋めたものと位置づけることができます。</p>
+
+  <h2>Kumarの7モードとの構造的類似性</h2>
+  <p>Vijay Kumarの7モードフレームワークが特に似ていると思いました。Kumarはイリノイ工科大学（IIT Institute of Design）の教授で、デザインイノベーションの方法論を体系化した人です。『101 Design Methods』（2012年）は、デザイン思考のプロセスを7つのモード（段階）に分け、各モードで使える具体的な手法を101個カタログ化しています。Kumarは以下の7段階を提示しています。</p>
+  <ol style="margin-left:20px">
+    <li>Sense Intent（意図の感知）</li>
+    <li>Know Context（文脈の理解）</li>
+    <li>Know People（人々の理解）</li>
+    <li>Frame Insights（洞察の枠組み化）</li>
+    <li>Explore Concepts（概念の探索）</li>
+    <li>Frame Solutions（解決策の枠組み化）</li>
+    <li>Realize Offerings（提供物の実現）</li>
+  </ol>
+  <p>このうち最初の4モードがリサーチから洞察への変換パイプラインです。</p>
+  <table>
+    <thead>
+      <tr><th>Kumarの7モード</th><th>本メソッドの段階</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1. Sense Intent（意図の感知）</td><td>ステージ1 仮説構築</td></tr>
+      <tr><td>2. Know Context（文脈の理解）</td><td>ステージ2 全体把握</td></tr>
+      <tr><td>3. Know People（人々の理解）</td><td>ステージ3〜5 ペイン特定・深掘り・暗黙知発掘</td></tr>
+      <tr><td>4. Frame Insights（洞察の枠組み化）</td><td>ステージ6〜7 真のペイン候補・再解釈</td></tr>
+      <tr><td>5. Explore Concepts／6. Frame Solutions／7. Realize</td><td>デザイン・実装フェーズ（本メソッドの成果物がここへの入力になる）</td></tr>
+    </tbody>
+  </table>
+  <p>Kumarの前半4モード（リサーチ→洞察）を、本メソッドは8段階に細分化して深掘りしています。つまり本メソッドは「範囲が狭い」のではなく、<strong>リサーチから洞察への変換精度を高めることに特化している</strong>。5〜7の設計・実装フェーズは別の専門性が必要になりますが、その質はリサーチフェーズの精度で決まります。</p>
+  <p>Kumarの7モードは101の具体的手法をこれらのモードに配置しており、<strong>本メソッドの各段階に適用可能なツールキットとしても機能します</strong>。書籍化や教材化の際に、各段階に対応する具体的手法を Kumar の101手法から選んで紐づけることで、実用性がさらに高まります。</p>
+
+  <h2>書籍との対応</h2>
+  <p>主要なUXリサーチ書籍との対応関係も整理しておきます。</p>
+  <table>
+    <thead>
+      <tr><th>書籍</th><th>著者</th><th>本メソッドとの主な対応</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Contextual Design（1997/2017）</td><td>Beyer & Holtzblatt</td><td>ステージ4〜7 深掘り・暗黙知発掘・真のペイン候補・再解釈</td></tr>
+      <tr><td>Interviewing Users（2013/2024）</td><td>Steve Portigal</td><td>ステージ2〜5 全体把握・ペイン特定・深掘り・暗黙知発掘</td></tr>
+      <tr><td>Just Enough Research（2013/2024）</td><td>Erika Hall</td><td>ステージ1・8 仮説構築・仮説検証（手法選択前に仮説形成を明示的に要求）</td></tr>
+      <tr><td>Mental Models（2008）</td><td>Indi Young</td><td>ステージ5〜7 暗黙知発掘・真のペイン候補・再解釈</td></tr>
+      <tr><td>Practical Empathy（2015）</td><td>Indi Young</td><td>ステージ5〜7（共感的リスニング→パターン特定→思考スタイルマッピング）</td></tr>
+      <tr><td>Observing the User Experience（2003/2012）</td><td>Kuniavsky, Goodman & Moed</td><td>ステージ1〜8 全段階の手法的基盤</td></tr>
+      <tr><td>Universal Methods of Design（2012/2019）</td><td>Hanington & Martin</td><td>ステージ1〜8 125の研究手法カタログとして全段階に適用可能</td></tr>
+      <tr><td>101 Design Methods（2012）</td><td>Vijay Kumar</td><td>最も粒度の近い構造的類似性。101の具体的手法を7モードに配置</td></tr>
+    </tbody>
+  </table>
+
+  <h2>本メソッドの特徴の整理</h2>
+  <p>以上の照合をまとめると、本メソッドの特徴は以下の3点に整理できます。</p>
+  <ol style="margin-left:20px">
+    <li><strong>ステージ5〜7を独立フェーズとして扱っていること</strong>：　多くの実務プログラムが一つのフェーズに含めている中間プロセスを、段階として分けて扱っている。</li>
+    <li><strong>実務経験から帰納的に構築されたこと</strong>：　学術的フレームワーク（Contextual Design、Grounded Theory、Kumar、Kolko、Sanders、Young、Hall）の知見と結果的に一致しているが、理論から演繹したのではなく現場での試行錯誤から辿り着いた。</li>
+    <li><strong>実務で直面する壁（第11章）を含めていること</strong>：　手法論だけでなく、手法を使う人間が組織の中で直面する構造的課題と、そこでの判断軸も含めて扱っている。</li>
+  </ol>
+  <div class="note">この補論を書いたのは、実務経験から体得した手法が学術的知見や世界の標準と結果的に一致していた、という事実の整理です。読者が自分の実務経験を言語化するとき、世界のどこかに同じ構造を発見している人がいる。そう思うと、デザインという仕事が少し楽になります。</div>
+
+  <p style="margin-top:32px"><a class="backlink" href="index.html#appendix-theory-supplement">← 本編に戻る</a></p>
+</div>
+</body>
+</html>
